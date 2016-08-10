@@ -1,0 +1,318 @@
+body 
+{
+	font-family : verdana, arial, sans-serif;
+	margin : 0px 0px 10px 0px;
+	background : #FFFFFF;	
+	color : #333;
+}
+
+a 
+{
+	color : #999966;
+}
+
+a:visited 
+{
+	color : #999966;
+}
+
+a:active 
+{
+	color : #999966;
+}
+
+a:link 
+{	
+	color : #999966;
+}
+
+a:hover 
+{
+	color : #999966;
+	font-weight : bold;
+}
+
+h1 
+{
+	font-family : verdana, arial, sans-serif;
+	font-size : 1.25em;
+}
+
+h1 a:visited,
+h1 a:active,
+h1 a:link {
+	color:#CC9933;
+
+}
+
+h1 a:hover {
+	color : #47F;
+}
+
+h2 
+{
+		font-family: verdana, arial, sans-serif; 
+		color: #CCC; 
+		text-transform: uppercase;
+		font-weight : bold;
+}	
+
+div.post
+{
+	font-family : verdana, arial, sans-serif;
+	background : #FFFFFF;
+	color : #333;
+	padding : 10px;
+	
+}
+	
+div.post h2
+{	
+		font-family: verdana, arial, sans-serif; 
+		font-size: .65em; 
+		font-weight : bold;
+		text-transform: uppercase;
+		font-weight:bold;
+		margin-top : 8px;
+		color: #003366; 
+}	
+			
+div.post h2 a
+{
+	color: #003366; 
+	text-decoration : none;
+	font-weight : bold;
+}
+
+div.post h2 a:visited
+{
+	color: #003366; 
+	text-decoration : none;
+	font-weight : bold;
+}
+
+div.post h2 a:link
+{
+	color: #003366; 
+	font-weight : bold;
+	text-decoration : none;
+}
+
+div.post h2 a:hover
+{
+	color: #003366; 
+	text-decoration : underline;
+} 
+
+div.imageframe h1 
+{
+	font-size : .8em;
+}
+
+div.imageframe a
+{
+	font-size : .8em;
+}
+
+h5 
+{
+	margin: 0px;
+	padding: 0px;
+	padding-top : 0px;
+	color : #333;
+}
+
+#top {
+	font-family : verdana, arial, sans-serif;
+	color:#FFF;
+	font-size : 1.1em;
+	border-bottom:1px dotted #FFF;
+	border-top:3px solid #99CCFF;
+	background:#336699;
+	text-transform:uppercase;
+	letter-spacing: .2em; 
+	padding-bottom : 15px;
+	padding-left : 15px;
+}
+
+#top a,
+    #top a:link,
+    #top a:visited,
+    #top a:active,
+    #top a:hover {
+		font-family : verdana, arial, sans-serif;
+		color:#FFF;
+		text-decoration : none;
+		font-weight : normal;
+		}
+
+#tagline 
+{
+	font-family : verdana, arial, sans-serif;
+	font-size : .6em;
+	font-weight:bold;
+	text-transform : none;
+	color:#99CCFF;
+	margin-top : -17px;
+	text-transform:none;	
+	letter-spacing: .1em; 	
+}
+
+p.date img {
+	vertical-align : middle;
+	
+}
+
+p.date 
+{
+	color: #666; 
+	font-family : verdana, arial, sans-serif;
+	font-size : .7em;
+	font-weight : normal;
+	padding : 5px;
+	border:1px solid #999;
+	width : 630px;
+}
+
+blockquote {
+	font-style : italic;
+}
+
+p.postfoot 
+{
+	font-family : verdana, arial, sans-serif;
+	font-size: .65em; 
+	color: #003366;  
+	padding-top : 10px;
+	
+}
+
+#rightmenu 
+{
+	margin-left : 663px;
+	width : 200px;
+	position : absolute;
+	margin-top : 0px;
+	border-left:1px dotted #999;
+	padding-left : 15px;
+
+}
+
+#rightmenu a,
+    #rightmenu a:link,
+    #rightmenu a:visited,
+    #rightmenu a:active
+    {
+		color : #999966;
+		text-decoration : none;
+    }
+   
+#rightmenu a:hover
+{
+	font-weight : bold;
+}
+ 
+#rightmenu h3 
+{
+		font-family:verdana, arial, sans-serif;
+		color:#666;
+		font-size: .6em;
+		font-weight:bold;
+  		background:#EEE;
+  		line-height:140%;
+  		padding:2px;
+  		margin-top:10px;
+  		text-align:center;
+  		text-transform:uppercase;
+
+}
+
+#rightmenu ul {
+	list-style : none;
+	color: #999966;
+	margin : 0px;	
+
+	margin-bottom : 10px;
+	font-size : 0.7em;
+	font-weight : normal;
+}
+
+#main {
+	width : 660px;
+	background : #FFFFFF;
+	padding : 10px;
+
+}
+
+#main h2 
+{
+	font-size : .8em;
+	color : #999966;
+	text-transform : uppercase;
+}
+
+#main h1
+{
+	font-size : .8em;
+	color : #999966;
+	text-transform : uppercase;
+}
+
+#footer 
+{
+	padding-top : 20px;
+	text-align : left;
+	font-size : 0.7em;
+	padding-left : 10px;
+	color : #333;
+}
+
+input.text {
+	width : 300px;	
+}
+
+textarea {
+	width : 300px;
+	height : 200px;	
+}
+
+h4
+{
+	color:#333;
+}
+
+#comments h4 span {
+	color:#333;
+}
+
+#comments h4 {
+	margin : 0px;
+	font-size : .8em;
+	color:#333;
+	padding-top : 10px;
+}
+
+p {
+	margin : 0px 0px;
+	font-size : .8em;
+	color:#333;
+}
+
+h3 
+{
+	margin : 0px;
+	padding-top : 15px;
+	font-size : .9em;
+	color:#333;
+	text-decoration : none;
+	border : 0px solid #FFF;
+}
+
+#relatedlinks ul {
+	list-style : none;
+	margin-left : 10px;
+	padding : 0px;
+}
+
+
+

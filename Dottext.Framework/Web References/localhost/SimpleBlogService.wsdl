@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.aspnetweblog.com/services/simpleblogservice/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.aspnetweblog.com/services/simpleblogservice/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.aspnetweblog.com/services/simpleblogservice/">
+      <s:element name="InsertCategoryPost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postdate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="categories" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertCategoryPostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCategoryPostResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCategoryPostWithUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postdate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="categories" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCategoryPostWithUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCategoryPostWithUrlResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimplePost">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postdate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimplePostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SimplePostResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimplePostUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postdate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimplePostUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SimplePostUrlResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleEntryUpdateUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="entryid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postupdate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleEntryUpdateUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SimpleEntryUpdateUrlResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleEntryUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="entryid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="postupdate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleEntryUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SimpleEntryUpdateResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategories">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategoriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCategoriesResult" type="s0:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="InsertCategoryPostSoapIn">
+    <part name="parameters" element="s0:InsertCategoryPost" />
+  </message>
+  <message name="InsertCategoryPostSoapOut">
+    <part name="parameters" element="s0:InsertCategoryPostResponse" />
+  </message>
+  <message name="InsertCategoryPostWithUrlSoapIn">
+    <part name="parameters" element="s0:InsertCategoryPostWithUrl" />
+  </message>
+  <message name="InsertCategoryPostWithUrlSoapOut">
+    <part name="parameters" element="s0:InsertCategoryPostWithUrlResponse" />
+  </message>
+  <message name="SimplePostSoapIn">
+    <part name="parameters" element="s0:SimplePost" />
+  </message>
+  <message name="SimplePostSoapOut">
+    <part name="parameters" element="s0:SimplePostResponse" />
+  </message>
+  <message name="SimplePostUrlSoapIn">
+    <part name="parameters" element="s0:SimplePostUrl" />
+  </message>
+  <message name="SimplePostUrlSoapOut">
+    <part name="parameters" element="s0:SimplePostUrlResponse" />
+  </message>
+  <message name="SimpleEntryUpdateUrlSoapIn">
+    <part name="parameters" element="s0:SimpleEntryUpdateUrl" />
+  </message>
+  <message name="SimpleEntryUpdateUrlSoapOut">
+    <part name="parameters" element="s0:SimpleEntryUpdateUrlResponse" />
+  </message>
+  <message name="SimpleEntryUpdateSoapIn">
+    <part name="parameters" element="s0:SimpleEntryUpdate" />
+  </message>
+  <message name="SimpleEntryUpdateSoapOut">
+    <part name="parameters" element="s0:SimpleEntryUpdateResponse" />
+  </message>
+  <message name="GetCategoriesSoapIn">
+    <part name="parameters" element="s0:GetCategories" />
+  </message>
+  <message name="GetCategoriesSoapOut">
+    <part name="parameters" element="s0:GetCategoriesResponse" />
+  </message>
+  <portType name="SBS_x0020__x0028_Simple_x0020_Blog_x0020_Service_x0029_Soap">
+    <operation name="InsertCategoryPost">
+      <documentation>Insert a Post with Categories</documentation>
+      <input message="s0:InsertCategoryPostSoapIn" />
+      <output message="s0:InsertCategoryPostSoapOut" />
+    </operation>
+    <operation name="InsertCategoryPost">
+      <documentation>Insert a Post with Categories</documentation>
+      <input name="InsertCategoryPostWithUrl" message="s0:InsertCategoryPostWithUrlSoapIn" />
+      <output name="InsertCategoryPostWithUrl" message="s0:InsertCategoryPostWithUrlSoapOut" />
+    </operation>
+    <operation name="InsertPost">
+      <documentation>Add a new Blog Entry</documentation>
+      <input name="SimplePost" message="s0:SimplePostSoapIn" />
+      <output name="SimplePost" message="s0:SimplePostSoapOut" />
+    </operation>
+    <operation name="InsertPost">
+      <documentation>Add a new Blog Entry</documentation>
+      <input name="SimplePostUrl" message="s0:SimplePostUrlSoapIn" />
+      <output name="SimplePostUrl" message="s0:SimplePostUrlSoapOut" />
+    </operation>
+    <operation name="Edit">
+      <documentation>Update existing entry</documentation>
+      <input name="SimpleEntryUpdateUrl" message="s0:SimpleEntryUpdateUrlSoapIn" />
+      <output name="SimpleEntryUpdateUrl" message="s0:SimpleEntryUpdateUrlSoapOut" />
+    </operation>
+    <operation name="Edit">
+      <documentation>Update existing entry</documentation>
+      <input name="SimpleEntryUpdate" message="s0:SimpleEntryUpdateSoapIn" />
+      <output name="SimpleEntryUpdate" message="s0:SimpleEntryUpdateSoapOut" />
+    </operation>
+    <operation name="GetCategories">
+      <documentation>A list of Post Categories</documentation>
+      <input message="s0:GetCategoriesSoapIn" />
+      <output message="s0:GetCategoriesSoapOut" />
+    </operation>
+  </portType>
+  <binding name="SBS_x0020__x0028_Simple_x0020_Blog_x0020_Service_x0029_Soap" type="s0:SBS_x0020__x0028_Simple_x0020_Blog_x0020_Service_x0029_Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="InsertCategoryPost">
+      <soap:operation soapAction="http://www.aspnetweblog.com/services/simpleblogservice/InsertCategoryPost" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="InsertCategoryPost">
+      <soap:operation soapAction="http://www.aspnetweblog.com/services/simpleblogservice/InsertCategoryPostWithUrl" style="document" />
+      <input name="InsertCategoryPostWithUrl">
+        <soap:body use="literal" />
+      </input>
+      <output name="InsertCategoryPostWithUrl">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="InsertPost">
+      <soap:operation soapAction="http://www.aspnetweblog.com/services/simpleblogservice/SimplePost" style="document" />
+      <input name="SimplePost">
+        <soap:body use="literal" />
+      </input>
+      <output name="SimplePost">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="InsertPost">
+      <soap:operation soapAction="http://www.aspnetweblog.com/services/simpleblogservice/SimplePostUrl" style="document" />
+      <input name="SimplePostUrl">
+        <soap:body use="literal" />
+      </input>
+      <output name="SimplePostUrl">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Edit">
+      <soap:operation soapAction="http://www.aspnetweblog.com/services/simpleblogservice/SimpleEntryUpdateUrl" style="document" />
+      <input name="SimpleEntryUpdateUrl">
+        <soap:body use="literal" />
+      </input>
+      <output name="SimpleEntryUpdateUrl">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Edit">
+      <soap:operation soapAction="http://www.aspnetweblog.com/services/simpleblogservice/SimpleEntryUpdate" style="document" />
+      <input name="SimpleEntryUpdate">
+        <soap:body use="literal" />
+      </input>
+      <output name="SimpleEntryUpdate">
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetCategories">
+      <soap:operation soapAction="http://www.aspnetweblog.com/services/simpleblogservice/GetCategories" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SBS_x0020__x0028_Simple_x0020_Blog_x0020_Service_x0029_">
+    <documentation>Simple ASPNETWebLog Blog Posting Service</documentation>
+    <port name="SBS_x0020__x0028_Simple_x0020_Blog_x0020_Service_x0029_Soap" binding="s0:SBS_x0020__x0028_Simple_x0020_Blog_x0020_Service_x0029_Soap">
+      <soap:address location="http://localhost/Services/SimpleBlogService.asmx" />
+    </port>
+  </service>
+</definitions>

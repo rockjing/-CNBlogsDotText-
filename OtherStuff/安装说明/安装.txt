@@ -1,0 +1,21 @@
+1、建立DottextWeb虚拟目录, 指向CNBlogsDotText\DottextWeb, 该虚拟目录用于VS.NET打开DottextWeb项目, 不要建立*.*到asp.net的映射。 
+
+2、建立访问站点虚拟目录, 指向CNBlogsDotText\DottextWeb, 并建立*.*到asp.net的映射
+
+3、安装数据库, 运行OtherStuff\SQL Scripts中有DotTextData.sql脚本，自动创建DotTextData数据库。也可以先建立数据库，然后运行DotTextData.sql脚本。忽略脚本安装错误提示，不影响正常使用。
+
+5、初始化数据库，分别运行InitData.sql与SkinControl脚本。
+
+6、在web.config中配置数据库连接字符串, 即<DbProvider>中的connectionString。
+
+7、上述配置完成后，就可以访问了。
+
+8、通过“新博客注册”注册一个新用户，并将该用户加入站点管理员组，操作方法：在表blog_UsersInRoles中，添加一条记录，UserID为你刚注册的用户的BlogID,RoleID为1(表blog_Roles中administrators的RoleID)。
+
+9、添加网站分类：
+　　A、以管理员用户登录，进入管理页面，打开“Manage”页面
+　　B、选择“编辑网站分类”，添加一个分类
+　　C、在分类名称点击“Config”,　再选择添加，就会向SiteBlogConfig.config文件写入数据，如果这时出现“访问被拒绝”的错误，那是因为程序被安装在NTFS分区上，运行IIS进程的用户对程序所在文件夹没有写入权限，你需要修改一下权限设置。
+
+10、设置首页默认显示的网站分类，在SiteBlogConfig.config中将相应的<SiteBlogConfig>设置成<IsDefault>true</IsDefault>。默认设置“首页”分类为<IsDefault>true</IsDefault>，会显示所有分类的随笔。
+

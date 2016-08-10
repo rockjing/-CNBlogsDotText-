@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3F9A746-9EE6-46C1-94A0-70903C9F1D93}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Dottext.Web.Admin</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Dottext.Web.Admin</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'WANRelease|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE;WANRelease</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Dottext.Framework\Dottext.Framework.csproj">
+      <Name>Dottext.Framework</Name>
+      <Project>{275FCE30-29AF-41AB-A488-28A254415AA1}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DotText.Search\DotText.Search.csproj">
+      <Name>DotText.Search</Name>
+      <Project>{8A92F870-BD4F-43B6-AD8B-D769342C8758}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="ActiproSoftware.CodeHighlighter">
+      <Name>ActiproSoftware.CodeHighlighter</Name>
+      <HintPath>..\..\OtherStuff\ThirdParty\ActiproSoftware.CodeHighlighter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <Name>FreeTextBox</Name>
+      <HintPath>..\..\OtherStuff\ThirdParty\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="skmRss">
+      <Name>skmRss</Name>
+      <HintPath>..\..\OtherStuff\ThirdParty\skmRss.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlogExport.aspx.cs">
+      <DependentUpon>BlogExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configure.aspx.cs">
+      <DependentUpon>Configure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditArticles.aspx.cs">
+      <DependentUpon>EditArticles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCategories.aspx.cs">
+      <DependentUpon>EditCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditFavorite.aspx.cs">
+      <DependentUpon>EditFavorite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGalleries.aspx.cs">
+      <DependentUpon>EditGalleries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditImage.aspx.cs">
+      <DependentUpon>EditImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditKeyWords.aspx.cs">
+      <DependentUpon>EditKeyWords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditLinks.aspx.cs">
+      <DependentUpon>EditLinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditNotepad.aspx.cs">
+      <DependentUpon>EditNotepad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditPosts.aspx.cs">
+      <DependentUpon>EditPosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditSiteBlogConfig.aspx.cs">
+      <DependentUpon>EditSiteBlogConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export.aspx.cs">
+      <DependentUpon>Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Files.aspx.cs">
+      <DependentUpon>Files.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportFromRSS.aspx.cs">
+      <DependentUpon>ImportFromRSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageDataBase.aspx.cs">
+      <DependentUpon>ManageDataBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageGlobalCategory.aspx.cs">
+      <DependentUpon>ManageGlobalCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageRoles.aspx.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageSite.aspx.cs">
+      <DependentUpon>ManageSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUserDelete.aspx.cs">
+      <DependentUpon>ManageUserDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyMessages.aspx.cs">
+      <DependentUpon>MyMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MySubscibe.aspx.cs">
+      <DependentUpon>MySubscibe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Options.aspx.cs">
+      <DependentUpon>Options.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Password.aspx.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preferences.aspx.cs">
+      <DependentUpon>Preferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Referrers.aspx.cs">
+      <DependentUpon>Referrers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\PageTemplate.ascx.cs">
+      <DependentUpon>PageTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatsView.aspx.cs">
+      <DependentUpon>StatsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\EntryEditor.ascx.cs">
+      <DependentUpon>EntryEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\AdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\Collections\IOpmlItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\Collections\IPageLocationCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\Collections\OpmlItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\Collections\PageLocationCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\ConfirmCommands.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\OpmlProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\PageLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\Preferences.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Components\SiteMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\ConfirmationPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\AdvancedPanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\BreadCrumbs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\ContentRegion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\HeaderBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\HeaderLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\LinkList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\MessagePanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\Page.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\Controls\Pager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebUI\ManagePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="BlogExport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configure.aspx" />
+    <Content Include="Confirm.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="EditArticles.aspx" />
+    <Content Include="EditCategories.aspx" />
+    <Content Include="EditFavorite.aspx" />
+    <Content Include="EditGalleries.aspx" />
+    <Content Include="EditImage.aspx" />
+    <Content Include="EditKeyWords.aspx" />
+    <Content Include="EditLinks.aspx" />
+    <Content Include="EditNotepad.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="EditPosts.aspx" />
+    <Content Include="EditSiteBlogConfig.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Error.aspx" />
+    <Content Include="Export.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="Files.aspx" />
+    <Content Include="ftb.imagegallery.aspx" />
+    <Content Include="ftb.inserttable.aspx" />
+    <Content Include="ImportFromRSS.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="license.txt" />
+    <Content Include="ManageDataBase.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ManageGlobalCategory.aspx" />
+    <Content Include="ManageRoles.aspx" />
+    <Content Include="ManageSite.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ManageUserDelete.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="MyMessages.aspx" />
+    <Content Include="MySubscibe.aspx" />
+    <Content Include="Options.aspx" />
+    <Content Include="Password.aspx" />
+    <Content Include="Preferences.aspx" />
+    <Content Include="Referrers.aspx" />
+    <Content Include="Resources\admin.css" />
+    <Content Include="Resources\bg_body.gif" />
+    <Content Include="Resources\bg_tabs.gif" />
+    <Content Include="Resources\FTB\dottext\bold.gif" />
+    <Content Include="Resources\FTB\dottext\bullets.gif" />
+    <Content Include="Resources\FTB\dottext\copy.gif" />
+    <Content Include="Resources\FTB\dottext\createlink.gif" />
+    <Content Include="Resources\FTB\dottext\cut.gif" />
+    <Content Include="Resources\FTB\dottext\delete.gif" />
+    <Content Include="Resources\FTB\dottext\deletetablecolumn.gif" />
+    <Content Include="Resources\FTB\dottext\deletetablerow.gif" />
+    <Content Include="Resources\FTB\dottext\emoticons.xml" />
+    <Content Include="Resources\FTB\dottext\fontbackcolorpicker.gif" />
+    <Content Include="Resources\FTB\dottext\fontforecolorpicker.gif" />
+    <Content Include="Resources\FTB\dottext\indent.gif" />
+    <Content Include="Resources\FTB\dottext\insertdate.gif" />
+    <Content Include="Resources\FTB\dottext\insertimage.gif" />
+    <Content Include="Resources\FTB\dottext\insertimagefromgallery.gif" />
+    <Content Include="Resources\FTB\dottext\insertrule.gif" />
+    <Content Include="Resources\FTB\dottext\inserttable.gif" />
+    <Content Include="Resources\FTB\dottext\inserttablecolumn.gif" />
+    <Content Include="Resources\FTB\dottext\inserttablerow.gif" />
+    <Content Include="Resources\FTB\dottext\inserttime.gif" />
+    <Content Include="Resources\FTB\dottext\italic.gif" />
+    <Content Include="Resources\FTB\dottext\justifycenter.gif" />
+    <Content Include="Resources\FTB\dottext\justifyfull.gif" />
+    <Content Include="Resources\FTB\dottext\justifyleft.gif" />
+    <Content Include="Resources\FTB\dottext\justifyright.gif" />
+    <Content Include="Resources\FTB\dottext\mode.design.gif" />
+    <Content Include="Resources\FTB\dottext\mode.html.gif" />
+    <Content Include="Resources\FTB\dottext\numberedlist.gif" />
+    <Content Include="Resources\FTB\dottext\outdent.gif" />
+    <Content Include="Resources\FTB\dottext\paste.gif" />
+    <Content Include="Resources\FTB\dottext\print.gif" />
+    <Content Include="Resources\FTB\dottext\redo.gif" />
+    <Content Include="Resources\FTB\dottext\removeformat.gif" />
+    <Content Include="Resources\FTB\dottext\save.gif" />
+    <Content Include="Resources\FTB\dottext\separator.gif" />
+    <Content Include="Resources\FTB\dottext\spellcheck.gif" />
+    <Content Include="Resources\FTB\dottext\strikethrough.gif" />
+    <Content Include="Resources\FTB\dottext\subscript.gif" />
+    <Content Include="Resources\FTB\dottext\superscript.gif" />
+    <Content Include="Resources\FTB\dottext\toolbar.end.gif" />
+    <Content Include="Resources\FTB\dottext\toolbar.start.gif" />
+    <Content Include="Resources\FTB\dottext\toolbarbutton.down.gif" />
+    <Content Include="Resources\FTB\dottext\toolbarbutton.over.gif" />
+    <Content Include="Resources\FTB\dottext\underline.gif" />
+    <Content Include="Resources\FTB\dottext\undo.gif" />
+    <Content Include="Resources\FTB\dottext\unlink.gif" />
+    <Content Include="Resources\FTB\dottext\wordclean.gif" />
+    <Content Include="Resources\FTB\dottext\wordcount.gif" />
+    <Content Include="Resources\FTB\folder.big.gif" />
+    <Content Include="Resources\FTB\folder.small.gif" />
+    <Content Include="Resources\FTB\folder.up.gif" />
+    <Content Include="Resources\header_logo.gif" />
+    <Content Include="Resources\ico_critical.gif" />
+    <Content Include="Resources\ico_info.gif" />
+    <Content Include="Resources\ico_warning.gif" />
+    <Content Include="Resources\PageTemplate.ascx" />
+    <Content Include="Resources\poweredbydotnet.gif" />
+    <Content Include="Resources\toggle_gray_down.gif" />
+    <Content Include="Resources\toggle_gray_up.gif" />
+    <Content Include="Resources\uicontrols.js" />
+    <Content Include="Skins.config" />
+    <Content Include="Statistics.aspx" />
+    <Content Include="StatsView.aspx" />
+    <Content Include="UserControls\EntryEditor.ascx" />
+    <EmbeddedResource Include="BlogExport.aspx.resx">
+      <DependentUpon>BlogExport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configure.aspx.resx">
+      <DependentUpon>Configure.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm.aspx.resx">
+      <DependentUpon>Confirm.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditArticles.aspx.resx">
+      <DependentUpon>EditArticles.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCategories.aspx.resx">
+      <DependentUpon>EditCategories.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditFavorite.aspx.resx">
+      <DependentUpon>EditFavorite.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditGalleries.aspx.resx">
+      <DependentUpon>EditGalleries.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditImage.aspx.resx">
+      <DependentUpon>EditImage.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditKeyWords.aspx.resx">
+      <DependentUpon>EditKeyWords.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLinks.aspx.resx">
+      <DependentUpon>EditLinks.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditNotepad.aspx.resx">
+      <DependentUpon>EditNotepad.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPosts.aspx.resx">
+      <DependentUpon>EditPosts.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSiteBlogConfig.aspx.resx">
+      <DependentUpon>EditSiteBlogConfig.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error.aspx.resx">
+      <DependentUpon>Error.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export.aspx.resx">
+      <DependentUpon>Export.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.aspx.resx">
+      <DependentUpon>Feedback.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Files.aspx.resx">
+      <DependentUpon>Files.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportFromRSS.aspx.resx">
+      <DependentUpon>ImportFromRSS.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDataBase.aspx.resx">
+      <DependentUpon>ManageDataBase.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageGlobalCategory.aspx.resx">
+      <DependentUpon>ManageGlobalCategory.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRoles.aspx.resx">
+      <DependentUpon>ManageRoles.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSite.aspx.resx">
+      <DependentUpon>ManageSite.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUserDelete.aspx.resx">
+      <DependentUpon>ManageUserDelete.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessages.aspx.resx">
+      <DependentUpon>MyMessages.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MySubscibe.aspx.resx">
+      <DependentUpon>MySubscibe.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.aspx.resx">
+      <DependentUpon>Options.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.aspx.resx">
+      <DependentUpon>Password.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences.aspx.resx">
+      <DependentUpon>Preferences.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Referrers.aspx.resx">
+      <DependentUpon>Referrers.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PageTemplate.ascx.resx">
+      <DependentUpon>PageTemplate.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.aspx.resx">
+      <DependentUpon>Statistics.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsView.aspx.resx">
+      <DependentUpon>StatsView.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EntryEditor.ascx.resx">
+      <DependentUpon>EntryEditor.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Navigation.config" />
+    <None Include="Web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

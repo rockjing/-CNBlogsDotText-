@@ -1,0 +1,291 @@
+body {
+  background-color: #6B6C70;
+	font-size : 10pt;
+	font-family : "Courier New", Arial, Helvetica;
+	margin : 0px;
+} 
+
+td {
+  background-color: #6B6C70;
+	font-size : 10pt;
+	font-family : "Courier New", Arial, Helvetica;
+	margin : 0px;
+}
+
+a:visited, a:active, a:link {	
+	color : #003366;
+	text-decoration : none;
+}
+
+a:hover {
+	color: #FF0000;
+	text-decoration : underline;
+}
+
+blockquote {
+	font-style : italic;
+}
+
+#header {
+  background-image: url(images/header.gif);
+  background-repeat: no-repeat;
+  height: 200px;
+  background-color: #6B6C70;
+  border-bottom: 1px solid #6B6C70;
+  color: #6B6C70;
+  margin: 0px;
+  padding: 45px 20px 25px 150px;
+}
+
+#header a {
+  color: #000000;
+  font-family: "Courier New", Arial, Helvetica;	
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+#menu {
+	float: left;
+	padding: 8px 10px 10px 10px;
+	width: 200px;
+}
+
+#menu h1 {
+	color: #000000;
+	font-family: "Courier New", Arial, Helvetica;	
+	font-size: 14px;
+	font-weight: bold;
+  margin: 0px;
+}
+
+#menu h3 {
+	color: #000000;
+	font-family: "Courier New", Arial, Helvetica;	
+	font-size: 14px;
+	font-weight: bold;
+  margin: 0px;
+}
+
+#menu ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px 0px 15px 5px;
+	font-size: 8pt;
+}
+
+.listitem img {
+	margin-left: 5px;
+}
+
+a.listitem:visited, a.listitem:active, a.listitem:link {	
+	color : MidnightBlue;
+	text-decoration : none;
+}
+
+a.listitem:hover {
+	color: #FF0000;
+	text-decoration : underline;
+}
+
+#LoginForm {
+	color: #808080;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#LoginForm input.text {
+  border: 1px dashed #C0C0C0;
+  font-size: 8pt;
+  width: 180px;
+}
+
+#main {
+	padding: 0px 20px 0px 0px;
+	width: 580px;
+}
+
+h1.block_title {
+  background-image: url(images/day_header.gif);
+  background-position: top left;
+  background-repeat: no-repeat;
+	color: #000000;
+	font-family: "Courier New", Arial, Helvetica;	
+	font-size: 12pt;
+	font-weight: bold;
+	height: 46px;
+	width: 600px;
+  margin: 10px 0px 0px 0px;
+  padding: 25px 0px 3px 25px;
+	text-transform: uppercase;
+}
+
+h1.block_title img {
+  vertical-align: middle;
+}
+
+h1.block_title a:visited, h1.block_title a:active, h1.block_title a:link {
+	color: #003366;
+}
+
+div.block {
+width: 600px;
+}
+
+div.block_footer {
+  background-image: url(images/day_footer.gif);
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 47px;
+  width: 600px;
+}
+
+div.post {
+  background-image: url(images/main_background.gif);
+  background-position: top left;
+  background-repeat: repeat-y;
+  font-size: 8pt;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 45px;
+}
+
+div.posttitle {
+  color: #355EA0;
+	font-family: "Courier New", Arial, Helvetica;	
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.posttitle a:visited, .posttitle a:active, .posttitle a:link {	
+	color : #003366;
+	text-decoration : none;
+}
+
+.posttitle a:hover {
+	color: #FF0000;
+	text-decoration : underline;
+}
+
+div.itemdesc {
+  color: #000000;
+  font-size: 10px;
+	font-family: "Courier New", Arial, Helvetica;	
+	text-transform: uppercase;
+}
+
+div.seperator {
+  background-image: url(images/main_background.gif);
+  background-position: top left;
+  background-repeat: repeat-y;
+}
+
+div.entrylistitem {
+  background-image: url(images/main_background.gif);
+  background-position: top left;
+  background-repeat: repeat-y;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+a.entrylisttitle, a.entrylisttitle:visited, a.entrylisttitle:link, a.entrylisttitle:active {
+  color: #003366;
+	font-family: "Courier New", Arial, Helvetica;	
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.moreinfo {
+  font-size: 8pt;
+  text-align: justify;
+}
+
+div.moreinfotitle {
+	color: #003366;
+	font-family: "Courier New", Arial, Helvetica;	
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+div.comments {
+  font-size: 8pt;
+}
+
+div.comment {
+	background-color: #8F8F8F;
+  border: 1px dashed #DDDDDD;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+}
+
+div.comment_author {
+  margin: 5px 0px 5px 0px;
+}
+
+div.comment_content {
+  margin: 5px 0px 5px 0px;
+}
+
+#postcomment {
+	border: 1px solid #DDDDDD;
+	background-color: #8F8F8F;
+  font-size: 8pt;
+  padding: 10px;
+  text-align: justify;
+  margin-top: 15px;
+  width: 435px;
+}
+
+#postcomment div {
+	color: #000000;
+  font-size: 10px;
+	font-weight: bold;
+  margin: 5px 0px 5px 0px;
+}
+
+#postcomment input.text, textarea {
+	background-color: #9F9F9F;
+  border: 1px solid #8F8F8F;
+  font-size: 8pt;
+}
+
+.footer {
+	border-top: 1px solid #E4E5E5;
+	clear: both;
+	margin : 0px;	
+	padding-top : 5px;
+	text-align : center;
+	font-size : 0.7em;
+}
+
+input.text {
+	width : 300px;	
+}
+
+textarea {
+	/*width : 300px;
+	height : 200px;	*/
+}
+
+#relatedlinks ul {
+	list-style : none;
+	margin-left : 10px;
+	padding : 0px;
+}
+.commentform
+{
+	border: 1px solid #DDDDDD;
+	background-color: #8F8F8F;
+  font-size: 8pt;
+  padding: 10px;
+  text-align: justify;
+  margin-top: 15px;
+ 
+}
+
+input
+{
+	border: 1px solid #DDDDDD;
+	background-color: #8F8F8F;
+}
+

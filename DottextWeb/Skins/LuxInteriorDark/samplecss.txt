@@ -1,0 +1,93 @@
+Sample CSS Selectors for Customisation:
+
+The default layout is a fixed width (760px) with a sidebar on the right. It is easy to change this: simply cut and paste the following code into your custom CSS selector field in the admin backend:
+
+/* Fluid Layout with Right Sidebar */
+
+body {
+ padding: 1em;
+}
+#container {
+ width: 100%;
+  }
+/* End Fluid Layout with Right Sidebar*/
+
+/*Fluid Layout with Left Sidebar*/
+
+body {
+ padding: 1em;
+}
+#content {
+margin-right: 0px;
+margin-left: 220px;
+ }
+.post
+{
+ border-left-width: 0px;
+ border-left-style: none;
+ border-left-color: #CCCCCC;
+ border-right-width: 2px;
+ border-right-style: solid;
+ border-right-color: #CCCCCC;
+}
+#sidebar-a {
+ float: left;
+ border-left-width: 0px;
+ border-left-style: none;
+ border-left-color: #CCCCCC;
+ border-right-width: 1px;
+ border-right-style: solid;
+ border-right-color: #CCCCCC;
+  }
+#container {
+ width: 100%;
+  }
+/* End Fluid Layout with Left Sidebar*/
+
+/* Fixed Layout with Left Sidebar*/
+
+#content {
+margin-right: 0px;
+margin-left: 220px;
+ }
+.post
+{
+ border-left-width: 0px;
+ border-left-style: none;
+ border-left-color: #CCCCCC;
+ border-right-width: 2px;
+ border-right-style: solid;
+ border-right-color: #CCCCCC;
+}
+#sidebar-a {
+ float: left;
+ border-left-width: 0px;
+ border-left-style: none;
+ border-left-color: #CCCCCC;
+ border-right-width: 1px;
+ border-right-style: solid;
+ border-right-color: #CCCCCC;
+  }
+  
+/* End Fixed Layout with Left Sidebar*/
+
+The following is the custom CSS code that I am using on my site to make the links a different color and to replace the blog title and description with my own picture:
+
+Custom Changes
+/* Change background color of border */
+body {background-color: #362F2D;}
+
+/* Change Link Color */
+a {color: #CC3300;}
+
+/* Insert Image Into Header */
+#top {background-image: url(../../../media/images/temp/puppy.jpg);}
+
+/* Hide Header Title and Description */
+#top h1 {visibility: hidden;}
+#top p {visibility: hidden;}
+
+This should give you a fair idea of the sort of customisation that is possible with this skin. 
+
+Install and customisation instructions can be found at:
+http://mixtaper.com/blogs/gosatango/articles/221.aspx

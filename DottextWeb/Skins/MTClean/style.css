@@ -1,0 +1,304 @@
+body 
+{
+	font-family: palatino,  georgia, verdana, arial, sans-serif;
+	margin:0px 0px 20px 0px;
+	background:#FFF;
+	text-decoration : none;
+}
+
+a 
+{
+	color : #003366;
+	text-decoration: underline; 
+}
+
+a:visited 
+{
+	 text-decoration: none;
+	 color : #003366;
+}
+
+a:active 
+{
+	color : #003366;
+	text-decoration : none;
+}
+
+a:link 
+{	
+	color : #003366;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	color: #999999;
+}
+
+h1 {
+	margin: 0px;
+	padding-top : 0px;
+	font-size : 1.25em;
+}
+
+h1 a:visited,
+h1 a:active,
+h1 a:link {
+	color : #000;
+}
+
+h1 a:hover {
+	color : #47F;
+	text-decoration : none;
+}
+
+h2 
+{
+	padding-top : 10px;
+	font-size: 1.0em;
+	text-decoration : none;
+}	
+
+div.post
+{
+	font-family : palatino, georgia, verdana, arial, sans-serif;
+	background : #FFF;
+	text-decoration : none;
+}
+	
+div.post h2
+{	
+	font-family : palatino, georgia, verdana, arial, sans-serif; 
+	font-size : 1.0em; 
+	color: #606060; 
+	font-weight:bold;
+	background:#FFF;	
+	padding-top : 0px;
+	margin-top : 28px;
+	text-decoration : none;
+}	
+
+div.post h2 a
+{
+	color: #606060;
+}
+	
+div.post h2 a:visited
+{
+	color: #606060;
+}
+
+div.post h2 a:active
+{
+	color : #606060;
+}
+			
+div.post h2 a:link
+{
+	font-family : Palatino, Georgia, Verdana, arir, Sans-Serif;
+	font-size : 1.0em;
+	color: #606060;
+	font-weight : bold;
+	background : #FFF;
+	text-decoration : none;
+}
+
+div.post h2 a:hover
+{
+	color: #999999;
+} 
+
+div.imageframe
+{
+	padding-top : 30px;
+}
+
+h5 
+{
+	margin: 0px;
+	padding: 0px;
+	padding-top : 15px;
+}
+
+#top {
+	font-family: palatino,  georgia, verdana, arial, sans-serif;
+	font-weight:normal;
+	text-decoration : none;
+	color : #333;
+	font-size : 1.75em;
+	background-color : #FFF;
+	padding-top : 15px;
+	padding-right : 15px;
+	padding-bottom : 15px;
+	padding-left : 10px;
+	border-top : 4px double #666;
+}
+
+#top a,
+    #top a:link,
+    #top a:visited,
+    #top a:active,
+    #top a:hover {
+		font-family: palatino,  georgia, verdana, arial, sans-serif;
+		font-size: large;
+		color: #333;
+		text-decoration: none;
+		}
+
+#tagline 
+{
+	font-family : palatino, georgia,times new roman, serif;
+	font-size : .5em;
+	text-transform : underline;
+	color : #333;
+	margin : 0px;
+}
+
+p.date img {
+	vertical-align : middle;
+}
+
+p.date 
+{
+	color: #333; 
+	font-family: Palatino, georgia, times new roman, serif; 
+	font-size : 1.0em;
+	font-weight : bold;
+	padding-bottom : 3px;
+	padding-top : 0px;
+	margin-top : 28px;
+	border-bottom : 1px solid #999;
+}
+
+blockquote {
+	font-style : italic;
+}
+
+p.postfoot 
+{
+	font-family: verdana, arial, sans-serif; 
+	font-size: .6em; 
+	color: #000000; 
+	padding-top : 0px;
+	
+}
+
+#leftmenu {
+	position : absolute;
+	left : 10px;
+	margin-top : 0px;
+	width : 200px;
+}
+
+#leftmenu h3 
+{
+	font-family:palatino, georgia, times new roman, serif;
+	color:#666600;
+	font-size:.75em;
+	font-weight:normal;
+  	padding:3px;
+  	margin-top:0px;
+	letter-spacing: .1em;
+  	background:#FFF;
+  	text-transform:uppercase;		
+}
+
+#leftmenu ul {
+	list-style : none;
+	color : #003366;
+	margin : 0px;	
+	padding : 0px;
+	margin-left : 3px;
+	margin-bottom : 10px;
+	font-size : 0.75em;
+	text-ali
+}
+
+#main {
+	margin-left : 220px;	
+	background-color : #FFF;
+	padding : 0px;
+	margin-top : -28px;
+	border-left : 0px solid #555;
+	border-bottom : 0px solid #47F;
+	padding-right : 20px;
+	text-decoration : none;
+}
+
+#footer {
+	margin : 0px;	
+	padding-top : 10px;
+	text-align : right;
+	font-size : 0.7em;
+	padding-right : 10px;
+}
+
+input.text {
+	width : 300px;	
+}
+
+textarea {
+	width : 300px;
+	height : 200px;	
+}
+
+#comments h4 span {
+	color : #999;
+}
+
+#comments h4 {
+	margin : 0px;
+	font-size : 0.9em;
+	padding-top : 10px;
+	padding-bottom : 5px;
+}
+
+#comments h3 
+{
+	padding-top : 10px;
+	padding-bottom : 5px;
+	font-size : 1.0em;
+	text-decoration : none;
+	color : #003366;
+}
+
+#comments t1 
+{
+	color : #003366;
+	text-decoration : none;
+	font-size : x-large;
+}
+
+
+#commentform
+{
+	padding-top : 25px;
+}
+
+h3 
+{
+	margin : 0px;
+	padding : 0px;
+	font-size : 1.2em;
+	border-bottom : 0px solid #AAA;
+}
+
+#relatedlinks ul {
+	list-style : none;
+	margin-left : 10px;
+	padding : 0px;
+}
+
+h6 {
+	margin: 0px;
+	padding-top : 30px;
+	font-size : 1.0em;
+}
+
+t1 
+{
+	color : #003366;
+	text-decoration : none;
+	font-size : x-large;
+}
+

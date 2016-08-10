@@ -1,0 +1,312 @@
+body 
+{
+	font-family : verdana, arial, sans-serif;
+	margin:20px 20px 20px 20px;
+	background:#333;
+	color : #CCC;
+}
+
+a 
+{
+		font-weight: normal;
+		text-decoration: underline;
+		color : #CCCC66;
+}
+
+a:visited 
+{
+		font-weight: normal;
+		color : #CCCC66;
+		text-decoration: underline;
+}
+
+a:active 
+{
+		font-weight: normal;
+		color : #CCCC66;
+		text-decoration: underline;
+}
+
+a:link 
+{	
+	font-weight : normal;
+	text-decoration: underline;
+	color : #CCCC66;
+}
+
+a:hover 
+{
+		font-weight: bold;
+		text-decoration: underline;
+		color : #CCCC66;
+}
+
+h1 
+{
+	font-family : verdana, arial, sans-serif;
+	color:#CC9933;
+	font-weight:bold;
+  	background:#333;
+	font-size : 1.25em;
+}
+
+h1 a:visited,
+h1 a:active,
+h1 a:link {
+	color:#CC9933;
+	font-weight : bold;
+}
+
+h1 a:hover {
+	color : #47F;
+	text-decoration : none;
+}
+
+h2 
+{
+		font-family: verdana, arial, sans-serif; 
+		color: #CCC; 
+		text-transform: uppercase;
+		font-weight : bold;
+}	
+
+div.post
+{
+	font-family : verdana, arial, sans-serif;
+	background : #333;
+	color : #CCC;
+	border-left : 1px solid #666;			
+  	border-right : 1px solid #666;
+  	border-top : 1px solid #666;
+  	border-bottom : 1px solid #666;
+  	padding-left : 8px;
+  	padding-right : 8px;
+  	padding-top : 0px;
+  	margin-top : 10px;
+  	padding-bottom : 8px;
+}
+	
+div.post h2
+{	
+		font-family: verdana, arial, sans-serif; 
+		font-size: .7em; 
+		font-weight : bold;
+		color: #CCC; 
+		text-transform: uppercase;
+		font-weight:bold;
+		margin-top : 8px;
+}	
+			
+div.post h2 a
+{
+	color : #CCC;
+	text-decoration : none;
+	font-weight : bold;
+}
+
+div.post h2 a:visited
+{
+	color : #CCC;
+	text-decoration : none;
+	font-weight : bold;
+}
+
+div.post h2 a:link
+{
+	color: #CCC;
+	font-weight : bold;
+	text-decoration : none;
+}
+
+div.post h2 a:hover
+{
+	color: #CCC;
+	text-decoration : underline;
+} 
+
+h5 
+{
+	margin: 0px;
+	padding: 0px;
+	padding-top : 0px;
+	color : #CCC;
+}
+
+#top {
+	font-family : verdana, arial, sans-serif;
+	font-weight:normal;
+	text-decoration : none;
+	color:#CC9933;
+	font-size : 1.75em;
+	background:#333;
+	padding-right : 15px;
+	padding-left : 10px;
+}
+
+#top a,
+    #top a:link,
+    #top a:visited,
+    #top a:active,
+    #top a:hover {
+		font-family : verdana, arial, sans-serif;
+		font-size: large;
+		color:#CC9933;
+		text-decoration: none;
+		}
+
+#tagline 
+{
+	font-family : verdana, arial, sans-serif;
+	font-size : .4em;
+	font-weight:bold;
+	text-transform : none;
+	color:#CCC;
+	margin-top : -17px;
+}
+
+p.date img {
+	vertical-align : middle;
+	
+}
+
+p.date 
+{
+	color: #CCC;
+	font-family : verdana, arial, sans-serif;
+	font-size : .9em;
+	font-weight : bold;
+	padding-bottom : 3px;
+	padding-top : 10px;
+}
+
+blockquote {
+	font-style : italic;
+}
+
+p.postfoot 
+{
+	font-family : verdana, arial, sans-serif;
+	font-size: .65em; 
+	color: #CC9933; 
+	padding-top : 10px;
+	
+}
+
+#rightmenu 
+{
+	margin-left : 680px;
+	position : absolute;
+	margin-top : 30px;
+}
+
+#rightmenu a,
+    #rightmenu a:link,
+    #rightmenu a:visited,
+    #rightmenu a:active,
+    {
+		color : #CCCC66;
+		text-decoration : none;
+    }
+   
+#rightmenu a:hover
+{
+	font-weight : bold;
+}
+ 
+#rightmenu h3 
+{
+	font-family : verdana, arial, sans-serif;
+	color: #CCC;
+	font-size:.6em;
+	font-weight:bold;
+	padding-bottom : 2px;
+  	margin-top:0px;
+	letter-spacing: .1em;
+  	background:#333;
+  	text-transform:uppercase;
+  	border-bottom : 1px solid #666;
+}
+
+#rightmenu ul {
+	list-style : none;
+	color: #CCCC66;
+	margin : 0px;	
+	padding : 0px;
+	margin-bottom : 10px;
+	font-size : 0.7em;
+}
+
+#main {
+	width : 660px;
+	
+	background-color : #333;
+	padding : 10px;
+}
+
+#main h2 
+{
+	font-size : .8em;
+}
+
+#main h1
+{
+	font-size : .9em;
+	color : #CCC;
+	text-transform : uppercase;
+}
+
+#footer 
+{
+	padding-top : 20px;
+	text-align : left;
+	font-size : 0.7em;
+	padding-left : 10px;
+	color : #CCC;
+}
+
+input.text {
+	width : 300px;	
+}
+
+textarea {
+	width : 300px;
+	height : 200px;	
+}
+
+h4
+{
+	color : #CCC;
+}
+
+#comments h4 span {
+	color : #CCC;
+}
+
+#comments h4 {
+	margin : 0px;
+	font-size : .8em;
+	color : #CCC;
+	padding-top : 10px;
+}
+
+p {
+	margin : 0px 0px;
+	font-size : .8em;
+	color : #CCC;
+}
+
+h3 
+{
+	margin : 0px;
+	padding-top : 15px;
+	font-size : .9em;
+	color : #CCC;
+	text-decoration : none;
+	border : 0px solid #FFF;
+}
+
+#relatedlinks ul {
+	list-style : none;
+	margin-left : 10px;
+	padding : 0px;
+}

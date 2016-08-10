@@ -1,0 +1,4 @@
+<%@ Control Language="c#" AutoEventWireup="false" Inherits="Dottext.Web.UI.Controls.ArchiveLinks" %>
+<%@ Register TagPrefix="uc1" TagName="CategoryList" Src="CategoryList.ascx" %>
+<!--done-->
+<uc1:CategoryList id="Categories" runat="server"></uc1:CategoryList>

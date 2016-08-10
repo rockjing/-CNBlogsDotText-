@@ -1,0 +1,2 @@
+<%@ Control Language="c#" Inherits="Dottext.Web.UI.Controls.BlogStats" %>
+posts - <asp:Literal ID = "PostCount" Runat = "server" />, comments - <asp:Literal ID = "CommentCount" Runat = "server" />, trackbacks - <asp:Literal ID = "PingTrackCount" Runat = "server" />, articles - <asp:Literal ID = "StoryCount" Runat = "server" Visible="True" />
